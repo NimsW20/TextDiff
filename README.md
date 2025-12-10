@@ -16,3 +16,11 @@
   year={2024}
 }
 ```
+
+
+# Updates
+
+1. Add the monuseg dataset from HUANGLIZI/LViT
+2. Add the clinical biobert model from emilyalsentzer/Bio_ClinicalBERT
+3. Add the diffusion model (Image encoder) checkpoints from openai
+a pre-trained Diffusion model (trained by OpenAI) to act as the "Image Encoder."
