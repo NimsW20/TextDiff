@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.env
+*.ckpt
+node_modules/
+
+datasets/
+checkpoints/
+saved_models/
+saved_textdiff/
