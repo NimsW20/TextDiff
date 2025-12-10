@@ -154,8 +154,8 @@ class Mixdataset(Dataset):
 
         self.one_hot_mask = one_hot_mask
         self.rowtext = row_text
-        self.tokenizer =  AutoTokenizer.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
-        self.bert_embedding = AutoModel.from_pretrained('emilyalsentzer/Bio_ClinicalBERT')
+        self.tokenizer = AutoTokenizer.from_pretrained('./saved_models/Bio_ClinicalBERT')
+        self.bert_embedding = AutoModel.from_pretrained('./saved_models/Bio_ClinicalBERT')
 
         self.image_paths = [os.path.join(self.input_path, p) for p in self.images_list]
         if joint_transform:
@@ -170,7 +170,7 @@ class Mixdataset(Dataset):
 
     def __getitem__(self, idx):
         img_name = self.images_list[idx]
-        if 'monu' in self.dataset_path:
+        if 'monu' in self.dataset_path.lower():
             mask_name = img_name[:-3]+'png'
         else:
             mask_name = 'mask_'+img_name  # qata_cov19

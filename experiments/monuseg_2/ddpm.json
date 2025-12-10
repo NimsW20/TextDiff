@@ -5,9 +5,9 @@
   "number_class": 2,
   "ignore_label": 255,
 
-  "training_path": "datasets/monuseg_2/Train_Folder",
-  "validation_path": "datasets/monuseg_2/Val_Folder",
-  "testing_path": "datasets/monuseg_2/Test_Folder",
+  "training_path": "datasets/MoNuSeg/Train_Folder",
+  "validation_path": "datasets/MoNuSeg/Val_Folder",
+  "testing_path": "datasets/MoNuSeg/Test_Folder",
   "model_path": "checkpoints/ddpm/256x256_diffusion_uncond.pt",
 
   "image_size": 256,
