@@ -11,7 +11,7 @@ This approach addresses the Label Bottleneck in medical AI, achieving state-of-t
 ## Model Architecture
 
 The system consists of three main modules:
-![Model Architecture](images/architecture.png)
+![Model Architecture](architecture.png)
 1. The Frozen Teacher (Feature Extractor)
   - Backbone: Unconditional DDPM trained on ImageNet (Architecture defined in unet.py).
   - Mechanism: The input image is corrupted with noise at three specific timesteps ($t=50, 150, 250$) using a fixed variance schedule.
